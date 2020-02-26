@@ -28,6 +28,10 @@ int main() {
     //át a memóriában.
     //Így értelemszerűen, ha azon a helyen átírom a biteket, megváltozik az eredeti változó értéke is
 
+    //Mikor használjunk pointereket?
+    //->Amikor nem lehet referencet használni
+    //->Vagyis: amikor meg kell változtatni, hogy mire mutat. (pl. láncolt lista)
+
 
     cout << endl << "-------" << endl << endl;
 
@@ -53,6 +57,10 @@ int main() {
 
     //Szemlélet/konyhanyelv: a reference egy "álneve" a változónak. Ha ezen hívom, ugyanúgy hallgat rá
     //("alias"-nak is szokták nevezni)
+
+    //Mikor használunk referencet?
+    //->Amikor nem muszáj pointert használni, akkor jobban szeretjük
+    //->Nagy objektumok érték szerinti átadásakor gazdaságosabb. (meg takarítunk plusz egy copy-t)
     return 0;
 }
 
