@@ -20,7 +20,7 @@ A típus reprezentációjában csak ezeket a „nem-nulla” értékű elemeket 
  kiválasztását (TIPP: ehhez célszerű a halmazt reprezentáló  sorozat mellettkülön  eltárolni  a  
  legnagyobb  elemet,  és  ezt  karbantartani), továbbá egy halmaz kiírását!
 
- 4. Implementáljuk a Pont típust. Használjuk a kör típus implementálásához. Legyen
+-4. Implementáljuk a Pont típust. Használjuk a kör típus implementálásához. Legyen
  függvényünk annak vizsgálatára, hogy egy pont benne van-e egy körben, vagy rajta van-e a köríven.
 
  5. Implementáljunk egy láncolt listát! A láncolt lista egy eleme tartalmaz egy értéket, és egy

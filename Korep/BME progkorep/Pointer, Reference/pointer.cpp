@@ -20,6 +20,8 @@ int main() {
 
     cout << endl << "-------" << endl << endl;
 
+    int * numberPointer = &num;
+
     PlusOne_(&num);
     cout << "main: num = " << num << endl;
 
@@ -34,6 +36,8 @@ int main() {
 
 
     cout << endl << "-------" << endl << endl;
+    
+    int& numReference = num;
 
     PlusOne__(num);
     cout << "main: num = " << num << endl;
@@ -70,6 +74,7 @@ void PlusOne(int n) {
 }
 
 void PlusOne_(int * n) {
+    cout << "n: " << n << endl;
     *n += 1; //Ilyenkor nem *n++-ozunk, nem működik
     cout << "PlusOne_: n = " << *n << endl;
 }

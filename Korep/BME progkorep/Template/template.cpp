@@ -14,11 +14,11 @@ T GetMax(T a, T b)
 
 //osztályokra is használhatjuk, persze, aminek van értelme ha bizonyos adatszerkezeteket írunk
 
+
 template <class T, int n>
 class sequence
 {
     T items[n];
-
 public:
     void setItem(T item, int index);
     T getItem(int index);
@@ -39,8 +39,11 @@ int main()
     int a = 12, b = 20, c;
     double d = 1.2, e = 6.3, f;
 
+    string x = "asd", y ="alma", z;
+
     c = GetMax(a, b);
     f = GetMax(d, e);
+    z = GetMax(x, y);
 
     cout << c << endl
          << f << endl
