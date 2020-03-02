@@ -1,0 +1,53 @@
+Ábrázold a függvényeket a megbeszéltjeink alapján!
+
+Alap formula:
+-------------------------
+a * f(x + b) + c
+
+(f(x) helyére megy a fő függvény, tehát 1/x, x, x^2, sin(x), log(x), stb.)
+
+
+Módszer:
+-------------------------
+1) Origóból ((0,0) pont) indulunk
+2) (-b)-vel eltoljuk az y tengelyen
+3) (c)-vel eltoljuk az x tengelyen
+4/a) Ha könnyű, (a)-ból megállapíthatjuk a torzítást (pl. sima 3x függvénynél egyszerű)
+4/b) Biztos módszer: kiszámolunk 1-2 értéket a kezdőpont körül, bejelöljük, az alapján
+     könnyedén meg tudjuk húzni az eltorzított függvény görbét
+
++1) Abszolút értéknél csak feltükrözünk mindent ami az x tengely alatt van
+
+
+Ne tekintsd kötelező házi feladatnak, de nézd át, ha van rá időd/kedved, és kérdezz nyugodtan.
+Grapher app-al ellenőrizhetsz, de rajzolj fel egy valamilyen megoldást előtte mindenképp, akkor
+is, ha nem vagy 100%-ig biztos.
+
+Jelmagyarázat:
+^ - hatványozás
+sqrt - gyökvonás
+|x| - abszolút érték (Grapher app-ban abs(x)-el jelölve)
+log a (x) - 'a' alapú logaritmus
+
+Feladatok
+-------------------------
+01) 3x + 4
+02) 2 * (x + 5)^2 - 4
+03) (x + 1)^3 - 1
+04) 2 x^4 + 5
+05) 4 * sqrt(x + 1) - 8
+06) -1 * sqrt(x) + 5
+07) | -2 * sqrt(x + 1) - 3 |
+08) | | | x - 1 | - 3 | - 2 | (TIPP: belülről indulj, egyesével felbontva az abszolút értékeket)
+09) ( 2 / (x + 1) ) + 2
+10) 3 * sin(x + 4) - 1
+11) | -1 * sin(x) - 0,5 |
+12) 2 * cos(x - 1) + 2
+13) -4 * tg(x - 1) + 2
+14) | tg(x + 1) - 1 |
+15) (2)^(x + 1)
+16) log 2 (x + 1) - 4
+17) - log 9 (x) - 2
+18) sqrt(-x + 1) - 2
+19) - | sqrt(-x) |
+20) | - cos(x + 1) - 4 |
