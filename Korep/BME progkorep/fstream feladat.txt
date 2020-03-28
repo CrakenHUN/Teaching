@@ -1,0 +1,69 @@
+1) (NEHÉZ) 
+Ön egy nagyon boomer manager alatt dolgozik, akinek meggyőződése, hogy az a baj a mai fiatalokkal, hogy nem DOS terminálokba kell írniuk a szövegeket amiket gépelnek. A megbizatása az, hogy egy olyan txt szövegszerkesztőt fejlesszen, aminek semmi értelme nincs, viszont terminálból fut, és nem praktikus. A funkciók:
+-> Beveszi a fájl nevét a usertől, amit aztán megnyit/létrehoz
+-> A sorokat betölti egy string tömbbe (HINT: getline(ifstream, string))
+-> Kiírja a fájlt soronként, elején az index-el
+-> Begépelhetünk szöveget. Ha leütjük az entert, beviszi a sort (HINT: getline-t ugyanúgy, viszont a cin is ifstream)
+-> Ha :-al kezdődik, akkor command, egyébként beírjuk a következő sorba.
+-> Command-ok: :quit - kilépés, :0 - a 0-ik indexű sort újra gépeljük
+-> Kilépéskor írja az egész tömb tartalmát a fájlba
+
+Példa képernyő lehetne:
+0 Somebody once told me,
+1 The world is gonna roll me,
+2 I ain't the sharpest tool in the shed,
+3 She was looking kind of dumb
+4 With her finger and her thumb
+5 In the shape of an L
+6 On her forehead
+
+-------------------------------------------------------------------
+
+2) (KÖNNYŰ)
+Adott egy txt file, ami az alábbi adatokat tartalmazza (soronként egy instance):
+-> egy felhasználónév
+-> egy jelszó
+(mindegyik csak számokból, legalább egy betűből (az angol abc kis- és nagybetűiből) áll, szóközök nélkül)
+
+Csináljunk egy bejelentkeztető rendszert. A user megad egy felhasználónevet, és egy jelszavat. Ha a név nincs benne a szöveges fájlban, írjuk ki, hogy nincs ilyen felhasználó. Ha benne van, de a jelszó nem tartozik hozzá, írjuk ki, hogy nem megfelelő jelszó. Ha jó adatokat adott meg, írjuk ki, hogy sikeresen belépett.
+	
+	+) Managerünk nem hajlandó nagyobb RAM-ot venni, így nem tudjuk betölteni az egész fájlt egy tömbbe. Oldjuk meg a feladatot úgy,
+hogy sose töltjük be az egész fájlt egy köztes adatszerkezetbe, csak közvetlenül belőle olvasunk.
+
+Példa txt:
+/*
+xXxSwagKolyokxXx 420blazeit
+piroska_neni unoka4
+elite_hackerman password1234
+*/
+
+3) (KÖZEPES)
+Bevezetjük a mikrotranzakciókat és a DLC-ket a Neptun rendszerbe, hogy a tehetősebb diákok gyorsabban be tudjanak lépni. Az Ön feladata, hogy az adatbázis kezelést megoldja. A tárolandó adatok (diákonként):
+-> Neptunkód
+-> 4 egymást követő szám, ami azt jelzi, hogy melyik DLC-ket vette meg a diák (0 = hamis, 1 = igaz)
+
+Pl.
+Ha mindet megvette:
+ABC123 1 1 1 1
+
+Ha egyet sem vett meg:
+XYZ789 0 0 0 0
+
+A bemeneti fájl így néz ki:
+Az első sor négy szám, ami az egy-egy DLC éppen aktuális pont értékét mutatja
+A következő sor egy szám, ami azt jelzi, hogy hány diák akar épp belépni (n darab)
+Ezt követően n darab sorban következnek az épp belépni készülő diákok adatai
+
+Rendezzük a diákokat belépési prioritás szerint. A prioritásuk így áll össze: ha megvan nekik egy adott DLC, akkor annak az aktuális pont értékét megkapják pluszban.
+
+A végén írjuk ki a neptun kódokat, és a pontszámaikat sorba rendezve.
+
+Példa txt:
+/*
+1 2 3 4
+4
+ABCDEF 0 0 0 1
+GHIJKL 0 1 1 0
+MNOPQR 1 0 0 0
+STUVWX 1 1 0 0
+*/
