@@ -1,0 +1,16 @@
+Implementáljuk a verem adatszerkezetet:
+
+-> add(element) függvénnyel hozzá tudunk adni elemeket
+-> pop() függvény visszaadja a "legfelső" elemet, és ki is törli
+-> empty() egy boolban visszaadja, hogy üres e a verem
+-> pop_to_file(filepath, number) egy fájlba "kipoppolja" a verem első 'number' elemét
+
+Használjunk tempalteket, hogy bármilyen adattípusra hasznáható legyen a class!
+
+Implementálás tipp: legyen egy konstans MAXLENGTH számunk, amekkora tömb az osztályban van az elemek tárolására, és egy külön int-ben
+tároljuk a legutolsó elem indexét. Ezt módosítjuk hozzáadáskor, és poppoláskor.
+
+Kivételkezelés
+------------------------
+
+Dobjunk kivételt ha üres elemet akar a user poppolni, illetve ha MAXLENGTH mértű tömbhöz hozzá akar adni. Kezeljük le helyesen a main-ben.
